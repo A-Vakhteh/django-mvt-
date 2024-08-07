@@ -1,0 +1,7 @@
+from django.db import models
+
+
+
+class services(models.Model):
+    name = models.CharField(max_leng)
+

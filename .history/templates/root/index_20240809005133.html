@@ -449,19 +449,23 @@
 {% for fe in ff %}
           <div class="col-lg-4" data-aos="zoom-in" data-aos-delay="100">
             <div class="pricing-item">
-              <h3>{{fe.name}}</h3>
-              <p class="description">{{fe.content}}</p>
-              <h4><sup>$</sup>{{fe.fee}}<span> / month</span></h4>
+              <h3>Free Plan</h3>
+              <p class="description">Ullam mollitia quasi nobis soluta in voluptatum et sint palora dex strater</p>
+              <h4><sup>$</sup>0<span> / month</span></h4>
               <a href="#" class="cta-btn">Start a free trial</a>
               <p class="text-center small">No credit card required</p>
               <ul>
-                {% for ca in ff.property.all %}
-                <li><i class="bi bi-check"></i> <span>{{ca.name}}</span></li>
-                {% endfor %}
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+                <li><i class="bi bi-check"></i> <span>Nec feugiat nisl pretium</span></li>
+                <li><i class="bi bi-check"></i> <span>Nulla at volutpat diam uteera</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Pharetra massa massa ultricies</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Massa ultricies mi quis hendrerit</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Voluptate id voluptas qui sed aperiam rerum</span></li>
+                <li class="na"><i class="bi bi-x"></i> <span>Iure nihil dolores recusandae odit voluptatibus</span></li>
               </ul>
             </div>
           </div><!-- End Pricing Item -->
-          {% endfor %}
+
         </div>
 
       </div>
@@ -561,9 +565,7 @@
                 <div class="profile mt-auto">
                   <img src={{tra.image.url}} class="testimonial-img" alt="">
                   <h3>{{tra.user.username}}</h3>
-                  {% for sk in tr.skills.all  %}
-                  <h4>{{sk.name}}</h4>
-                  {% endfor %}
+                  <h4>Freelancer</h4>
                 </div>
               </div>
             </div><!-- End testimonial item -->

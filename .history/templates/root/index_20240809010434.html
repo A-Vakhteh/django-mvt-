@@ -455,9 +455,9 @@
               <a href="#" class="cta-btn">Start a free trial</a>
               <p class="text-center small">No credit card required</p>
               <ul>
-                {% for ca in ff.property.all %}
-                <li><i class="bi bi-check"></i> <span>{{ca.name}}</span></li>
-                {% endfor %}
+                {% for ca in ff  %}{% endfor %}
+                <li><i class="bi bi-check"></i> <span>Quam adipiscing vitae proin</span></li>
+        
               </ul>
             </div>
           </div><!-- End Pricing Item -->
@@ -561,9 +561,7 @@
                 <div class="profile mt-auto">
                   <img src={{tra.image.url}} class="testimonial-img" alt="">
                   <h3>{{tra.user.username}}</h3>
-                  {% for sk in tr.skills.all  %}
-                  <h4>{{sk.name}}</h4>
-                  {% endfor %}
+                  <h4>Freelancer</h4>
                 </div>
               </div>
             </div><!-- End testimonial item -->

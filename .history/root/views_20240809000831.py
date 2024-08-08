@@ -1,0 +1,22 @@
+from django.shortcuts import render
+from .models import *
+
+def home(request):
+    #service = services.objects.all()
+    service = services.objects.filter(status=True)
+    que = question.objects.all()
+    return render(request,'root/index.html' , context={"name": service})
+
+def trainers(request):
+    #service = services.objects.all()
+    
+    return render(request,'root/index.html' , context={"tr": train})
+
+def question(request):
+    
+    
+    return render(request,'root/index.html' , context={"qu": que})
+
+
+   
+    

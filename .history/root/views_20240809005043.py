@@ -13,7 +13,6 @@ def home(request):
         'que': que,
         'name': service,
         'ss':sserve,
-        'ff':feee,
     }
     
     return render(request,'root/index.html' , context=context)

@@ -15,16 +15,6 @@ class services(models.Model):
     
     class META:
         ordering =('created_at',)
-        
-class skills(models.Model):
-    name = models.CharField(max_length=100)
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
-    def __str__(self):
-        return self.name
-    
-    class META:
-        ordering =('created_at',)        
 
 class trainer(models.Model):
     user = models.ForeignKey(User,on_delete=models.CASCADE)
@@ -33,12 +23,15 @@ class trainer(models.Model):
     description = models.TextField()
     status = models.BooleanField(default=False)
     created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now = True)
-    
+    up
+
+
+class skills(models.Model):
+    name = models.CharField(max_length=100)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
     def __str__(self):
-        return self.user.username
-        
+        return self.name
+    
     class META:
-        ordering = ('created_at',)
-
-
+        ordering =('created_at',)

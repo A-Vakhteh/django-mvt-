@@ -3,6 +3,6 @@ from .models import services
 
 def home(request):
     #service = services.objects.all()
-    service = services.objects.filter(status=True)
+    service = services.objects.filter(s)
     return render(request,'root/index.html' , context={"name": service})
     

@@ -8,13 +8,13 @@ def home(request):
 
 def trainers(request):
     #service = services.objects.all()
-    train = trainer.objects.all()
+    train = trainer.objects.objects.all()
     return render(request,'root/index.html' , context={"tr": train})
 
 def question(request):
     
-    que = question.objects.all()
-    return render(request,'root/index.html' , context={"qu": que})
+    train = trainer.objects.objects.all()
+    return render(request,'root/index.html' , context={"tr": train})
 
 
    

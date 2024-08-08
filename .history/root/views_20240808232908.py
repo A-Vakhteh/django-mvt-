@@ -13,7 +13,7 @@ def trainers(request):
 
 def question(request):
     
-    que = question.objects.all()
+    que = question.p
     return render(request,'root/index.html' , context={"qu": que})
 
 

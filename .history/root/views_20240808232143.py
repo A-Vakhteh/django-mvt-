@@ -14,7 +14,7 @@ def trainers(request):
 def question(request):
     
     que = question.objects.all()
-    return render(request,'root/index.html' , context={"qu": que})
+    return render(request,'root/index.html' , context={"qu": train})
 
 
    

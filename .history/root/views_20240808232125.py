@@ -13,8 +13,8 @@ def trainers(request):
 
 def question(request):
     
-    que = question.objects.all()
-    return render(request,'root/index.html' , context={"qu": que})
+    quez = trainer.objects.all()
+    return render(request,'root/index.html' , context={"qu": train})
 
 
    
